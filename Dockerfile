@@ -12,7 +12,7 @@ RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/
 RUN apt-get update && apt-get install -y \
     software-properties-common \
     npm
-RUN npm install npm@latest -g
+RUN npm install npm@latest
 
 # create app folder
 RUN mkdir /app
