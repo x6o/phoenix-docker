@@ -11,7 +11,7 @@ RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/
 # install node
 RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
-RUN apt-get install nodejs
+RUN apt-get install nodejs-legacy
 
 # create app folder
 RUN mkdir /app
